@@ -115,4 +115,10 @@ Current event: 421
 Command failed: could not find symbol value for x
 ```
 
-Imagine being able to stop a program's execution at a specific line where a program panics and then step back through the program to retrace how the program arrived at that panic statement.
+### Conclusion
+
+A combination of rr and delve brings a powerful debugging experience to Go programs that can be leveraged for
+tracking down nefarious and unexpected bugs in test environments.
+
+For example, one might decide to deploy a web service in a chaos testing context while recording with rr to expose
+and capture heisenbugs so that the they can be effectively debugged.
